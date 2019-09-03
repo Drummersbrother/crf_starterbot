@@ -1,4 +1,603 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:crf_starterbot-cache
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 3250 5500
+$Comp
+L crf_starterbot-rescue:L9110-motordriver U101
+U 1 1 5D6CC3A6
+P 3450 5500
+F 0 "U101" H 3450 5937 60  0000 C CNN
+F 1 "L9110" H 3450 5831 60  0000 C CNN
+F 2 "" H 3450 5500 60  0000 C CNN
+F 3 "" H 3450 5500 60  0000 C CNN
+	1    3450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J102
+U 1 1 5D6CCB3D
+P 4500 4650
+F 0 "J102" H 4580 4642 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4580 4551 50  0000 L CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J101
+U 1 1 5D6CD302
+P 4450 5450
+F 0 "J101" H 4530 5442 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4530 5351 50  0000 L CNN
+F 2 "" H 4450 5450 50  0001 C CNN
+F 3 "~" H 4450 5450 50  0001 C CNN
+	1    4450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J103
+U 1 1 5D6CD935
+P 2600 1800
+F 0 "J103" H 2518 1475 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2518 1566 50  0000 C CNN
+F 2 "" H 2600 1800 50  0001 C CNN
+F 3 "~" H 2600 1800 50  0001 C CNN
+	1    2600 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH101
+U 1 1 5D6CE7BC
+P 3350 1900
+F 0 "TH101" H 3448 1946 50  0000 L CNN
+F 1 "Thermistor_NTC" H 3448 1855 50  0000 L CNN
+F 2 "" H 3350 1950 50  0001 C CNN
+F 3 "~" H 3350 1950 50  0001 C CNN
+	1    3350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Comparator:LM393 U102
+U 1 1 5D6D081C
+P 8350 4400
+F 0 "U102" H 8350 4033 50  0000 C CNN
+F 1 "LM393" H 8350 4124 50  0000 C CNN
+F 2 "" H 8350 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 8350 4400 50  0001 C CNN
+	1    8350 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Comparator:LM393 U102
+U 2 1 5D6D1481
+P 8350 4950
+F 0 "U102" H 8350 4583 50  0000 C CNN
+F 1 "LM393" H 8350 4674 50  0000 C CNN
+F 2 "" H 8350 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 8350 4950 50  0001 C CNN
+	2    8350 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Comparator:LM393 U102
+U 3 1 5D6D2376
+P 7800 4700
+F 0 "U102" H 7758 4746 50  0000 L CNN
+F 1 "LM393" H 7758 4655 50  0000 L CNN
+F 2 "" H 7800 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 7800 4700 50  0001 C CNN
+	3    7800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U103
+U 1 1 5D6E18AB
+P 6050 2300
+F 0 "U103" H 6050 1411 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 6050 1320 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 6050 1150 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 4200 1150 50  0001 C CNN
+	1    6050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L hr-sc04:HC-SR04 U104
+U 1 1 5D6E3BEB
+P 7600 1850
+F 0 "U104" H 8030 1846 50  0000 L CNN
+F 1 "HC-SR04" H 8030 1755 50  0000 L CNN
+F 2 "XCVR_HC-SR04" H 7600 1850 50  0001 L BNN
+F 3 "Unavailable" H 7600 1850 50  0001 L BNN
+F 4 "HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi" H 7600 1850 50  0001 L BNN "Field4"
+F 5 "Adafruit Industries" H 7600 1850 50  0001 L BNN "Field5"
+F 6 "None" H 7600 1850 50  0001 L BNN "Field6"
+F 7 "None" H 7600 1850 50  0001 L BNN "Field7"
+F 8 "HC-SR04" H 7600 1850 50  0001 L BNN "Field8"
+	1    7600 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D6E78C4
+P 6150 1400
+F 0 "#PWR?" H 6150 1250 50  0001 C CNN
+F 1 "+3V3" H 6165 1573 50  0000 C CNN
+F 2 "" H 6150 1400 50  0001 C CNN
+F 3 "" H 6150 1400 50  0001 C CNN
+	1    6150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D6E7DB8
+P 5950 1400
+F 0 "#PWR?" H 5950 1250 50  0001 C CNN
+F 1 "+BATT" H 5965 1573 50  0000 C CNN
+F 2 "" H 5950 1400 50  0001 C CNN
+F 3 "" H 5950 1400 50  0001 C CNN
+	1    5950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1400 5950 1500
+Wire Wire Line
+	6150 1400 6150 1500
+Text GLabel 6550 1800 2    50   BiDi ~ 0
+TEMP
+Text GLabel 5550 2200 0    50   BiDi ~ 0
+TRIG
+Text GLabel 6550 2000 2    50   BiDi ~ 0
+LEFTA
+Text GLabel 6550 2100 2    50   BiDi ~ 0
+LEFTB
+Text GLabel 6550 2200 2    50   BiDi ~ 0
+RIGHTA
+Text GLabel 6550 2300 2    50   BiDi ~ 0
+RIGHTB
+Text GLabel 6550 2400 2    50   BiDi ~ 0
+LEFT_ENC
+Text GLabel 6550 2500 2    50   BiDi ~ 0
+RIGHT_ENC
+Text GLabel 6550 2600 2    50   BiDi ~ 0
+LEFT_SW
+Text GLabel 6550 2700 2    50   BiDi ~ 0
+RIGHT_SW
+Text GLabel 5550 2300 0    50   BiDi ~ 0
+ECHO
+Text GLabel 6550 1900 2    50   BiDi ~ 0
+LED
+Wire Wire Line
+	6450 1800 6550 1800
+Wire Wire Line
+	6450 1900 6550 1900
+Wire Wire Line
+	6450 2000 6550 2000
+Wire Wire Line
+	6450 2100 6550 2100
+Wire Wire Line
+	6450 2200 6550 2200
+Wire Wire Line
+	6450 2300 6550 2300
+Wire Wire Line
+	6450 2400 6550 2400
+Wire Wire Line
+	6450 2500 6550 2500
+Wire Wire Line
+	6450 2600 6550 2600
+Wire Wire Line
+	6450 2700 6550 2700
+Wire Wire Line
+	5550 2200 5650 2200
+Wire Wire Line
+	5550 2300 5650 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5D6EFE75
+P 6050 3200
+F 0 "#PWR?" H 6050 2950 50  0001 C CNN
+F 1 "GND" H 6055 3027 50  0000 C CNN
+F 2 "" H 6050 3200 50  0001 C CNN
+F 3 "" H 6050 3200 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3200 6050 3100
+$Comp
+L Device:C_Small C?
+U 1 1 5D6F0B4B
+P 5500 1900
+F 0 "C?" H 5592 1946 50  0000 L CNN
+F 1 "C_Small" H 5592 1855 50  0000 L CNN
+F 2 "" H 5500 1900 50  0001 C CNN
+F 3 "~" H 5500 1900 50  0001 C CNN
+	1    5500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D6F2DBF
+P 5500 1700
+F 0 "#PWR?" H 5500 1550 50  0001 C CNN
+F 1 "+BATT" H 5515 1873 50  0000 C CNN
+F 2 "" H 5500 1700 50  0001 C CNN
+F 3 "" H 5500 1700 50  0001 C CNN
+	1    5500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1750 5650 1750
+Wire Wire Line
+	5650 1750 5650 1900
+Wire Wire Line
+	5500 1700 5500 1750
+Connection ~ 5500 1750
+Wire Wire Line
+	5500 1750 5500 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F3900
+P 5500 2000
+F 0 "#PWR?" H 5500 1750 50  0001 C CNN
+F 1 "GND" H 5505 1827 50  0000 C CNN
+F 2 "" H 5500 2000 50  0001 C CNN
+F 3 "" H 5500 2000 50  0001 C CNN
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D6F51F1
+P 7450 2100
+F 0 "#PWR?" H 7450 1950 50  0001 C CNN
+F 1 "+3V3" H 7465 2273 50  0000 C CNN
+F 2 "" H 7450 2100 50  0001 C CNN
+F 3 "" H 7450 2100 50  0001 C CNN
+	1    7450 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 2100 7500 2100
+Wire Wire Line
+	7500 2100 7500 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F5F37
+P 7850 2100
+F 0 "#PWR?" H 7850 1850 50  0001 C CNN
+F 1 "GND" H 7855 1927 50  0000 C CNN
+F 2 "" H 7850 2100 50  0001 C CNN
+F 3 "" H 7850 2100 50  0001 C CNN
+	1    7850 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 2100 7800 2100
+Wire Wire Line
+	7800 2100 7800 2050
+$Comp
+L Device:Q_NPN_BCE Q?
+U 1 1 5D6F6821
+P 8050 2600
+F 0 "Q?" H 8241 2646 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 8241 2555 50  0000 L CNN
+F 2 "" H 8250 2700 50  0001 C CNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+	1    8050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F7676
+P 8150 2800
+F 0 "#PWR?" H 8150 2550 50  0001 C CNN
+F 1 "GND" H 8155 2627 50  0000 C CNN
+F 2 "" H 8150 2800 50  0001 C CNN
+F 3 "" H 8150 2800 50  0001 C CNN
+	1    8150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D6F7DEB
+P 8150 2000
+F 0 "#PWR?" H 8150 1850 50  0001 C CNN
+F 1 "+3V3" H 8165 2173 50  0000 C CNN
+F 2 "" H 8150 2000 50  0001 C CNN
+F 3 "" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D6F9570
+P 8150 2150
+F 0 "R?" H 8209 2196 50  0000 L CNN
+F 1 "DNL/100K" H 8209 2105 50  0000 L CNN
+F 2 "" H 8150 2150 50  0001 C CNN
+F 3 "~" H 8150 2150 50  0001 C CNN
+	1    8150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2050 8150 2000
+Text GLabel 7600 2050 3    50   BiDi ~ 0
+TRIG
+Text GLabel 8200 2300 2    50   BiDi ~ 0
+ECHO
+$Comp
+L Device:R_Small R?
+U 1 1 5D703E5E
+P 8000 2300
+F 0 "R?" H 8059 2346 50  0000 L CNN
+F 1 "0" H 8059 2255 50  0000 L CNN
+F 2 "" H 8000 2300 50  0001 C CNN
+F 3 "~" H 8000 2300 50  0001 C CNN
+	1    8000 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D7042A4
+P 7800 2450
+F 0 "R?" H 7859 2496 50  0000 L CNN
+F 1 "DNL/100K" H 7859 2405 50  0000 L CNN
+F 2 "" H 7800 2450 50  0001 C CNN
+F 3 "~" H 7800 2450 50  0001 C CNN
+	1    7800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2300 8150 2300
+Wire Wire Line
+	8150 2300 8150 2250
+Wire Wire Line
+	8150 2300 8150 2400
+Connection ~ 8150 2300
+Wire Wire Line
+	7800 2550 7800 2600
+Wire Wire Line
+	7800 2600 7850 2600
+Wire Wire Line
+	7800 2350 7800 2300
+Wire Wire Line
+	7800 2300 7900 2300
+Wire Wire Line
+	8150 2300 8200 2300
+Wire Wire Line
+	7800 2300 7700 2300
+Wire Wire Line
+	7700 2300 7700 2050
+Connection ~ 7800 2300
+$Comp
+L power:+BATT #PWR?
+U 1 1 5D70BDE1
+P 2850 1650
+F 0 "#PWR?" H 2850 1500 50  0001 C CNN
+F 1 "+BATT" H 2865 1823 50  0000 C CNN
+F 2 "" H 2850 1650 50  0001 C CNN
+F 3 "" H 2850 1650 50  0001 C CNN
+	1    2850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D70C77A
+P 2850 1850
+F 0 "#PWR?" H 2850 1600 50  0001 C CNN
+F 1 "GND" H 2855 1677 50  0000 C CNN
+F 2 "" H 2850 1850 50  0001 C CNN
+F 3 "" H 2850 1850 50  0001 C CNN
+	1    2850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1700 2850 1700
+Wire Wire Line
+	2850 1700 2850 1650
+Wire Wire Line
+	2800 1800 2850 1800
+Wire Wire Line
+	2850 1800 2850 1850
+$Comp
+L Device:R_Small R?
+U 1 1 5D70F2FB
+P 3350 1550
+F 0 "R?" H 3409 1596 50  0000 L CNN
+F 1 "33K" H 3409 1505 50  0000 L CNN
+F 2 "" H 3350 1550 50  0001 C CNN
+F 3 "~" H 3350 1550 50  0001 C CNN
+	1    3350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D710738
+P 3350 1400
+F 0 "#PWR?" H 3350 1250 50  0001 C CNN
+F 1 "+3V3" H 3365 1573 50  0000 C CNN
+F 2 "" H 3350 1400 50  0001 C CNN
+F 3 "" H 3350 1400 50  0001 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1400 3350 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5D712214
+P 3350 2100
+F 0 "#PWR?" H 3350 1850 50  0001 C CNN
+F 1 "GND" H 3355 1927 50  0000 C CNN
+F 2 "" H 3350 2100 50  0001 C CNN
+F 3 "" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2100 3350 2050
+Text GLabel 3400 1700 2    50   BiDi ~ 0
+TEMP
+Wire Wire Line
+	3350 1650 3350 1700
+Wire Wire Line
+	3350 1700 3400 1700
+Wire Wire Line
+	3350 1700 3350 1750
+Connection ~ 3350 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5D7178A8
+P 4150 1400
+F 0 "#PWR?" H 4150 1150 50  0001 C CNN
+F 1 "GND" H 4155 1227 50  0000 C CNN
+F 2 "" H 4150 1400 50  0001 C CNN
+F 3 "" H 4150 1400 50  0001 C CNN
+	1    4150 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1400 4150 1350
+Wire Wire Line
+	4150 1350 4200 1350
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5D719894
+P 4400 1350
+F 0 "SW?" H 4400 1585 50  0000 C CNN
+F 1 "SW_SPST" H 4400 1494 50  0000 C CNN
+F 2 "" H 4400 1350 50  0001 C CNN
+F 3 "~" H 4400 1350 50  0001 C CNN
+	1    4400 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 1350 2    50   BiDi ~ 0
+LEFT_SW
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D71B2AB
+P 4650 1050
+F 0 "#PWR?" H 4650 900 50  0001 C CNN
+F 1 "+3V3" H 4665 1223 50  0000 C CNN
+F 2 "" H 4650 1050 50  0001 C CNN
+F 3 "" H 4650 1050 50  0001 C CNN
+	1    4650 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1050 4650 1100
+$Comp
+L Device:R_Small R?
+U 1 1 5D71B2A5
+P 4650 1200
+F 0 "R?" H 4709 1246 50  0000 L CNN
+F 1 "10K" H 4709 1155 50  0000 L CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "~" H 4650 1200 50  0001 C CNN
+	1    4650 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1350 4650 1350
+Wire Wire Line
+	4650 1350 4650 1300
+Wire Wire Line
+	4650 1350 4700 1350
+Connection ~ 4650 1350
+$Comp
+L power:GND #PWR?
+U 1 1 5D720C95
+P 4150 2050
+F 0 "#PWR?" H 4150 1800 50  0001 C CNN
+F 1 "GND" H 4155 1877 50  0000 C CNN
+F 2 "" H 4150 2050 50  0001 C CNN
+F 3 "" H 4150 2050 50  0001 C CNN
+	1    4150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2050 4150 2000
+Wire Wire Line
+	4150 2000 4200 2000
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5D720C9D
+P 4400 2000
+F 0 "SW?" H 4400 2235 50  0000 C CNN
+F 1 "SW_SPST" H 4400 2144 50  0000 C CNN
+F 2 "" H 4400 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 2000 2    50   BiDi ~ 0
+RIGHT_SW
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D720CA4
+P 4650 1700
+F 0 "#PWR?" H 4650 1550 50  0001 C CNN
+F 1 "+3V3" H 4665 1873 50  0000 C CNN
+F 2 "" H 4650 1700 50  0001 C CNN
+F 3 "" H 4650 1700 50  0001 C CNN
+	1    4650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1700 4650 1750
+$Comp
+L Device:R_Small R?
+U 1 1 5D720CAB
+P 4650 1850
+F 0 "R?" H 4709 1896 50  0000 L CNN
+F 1 "10K" H 4709 1805 50  0000 L CNN
+F 2 "" H 4650 1850 50  0001 C CNN
+F 3 "~" H 4650 1850 50  0001 C CNN
+	1    4650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2000 4650 2000
+Wire Wire Line
+	4650 2000 4650 1950
+Wire Wire Line
+	4650 2000 4700 2000
+Connection ~ 4650 2000
+NoConn ~ 3350 4650
+$Comp
+L crf_starterbot-rescue:L9110-motordriver U?
+U 1 1 5D73C910
+P 3550 4650
+F 0 "U?" H 3550 5087 60  0000 C CNN
+F 1 "L9110" H 3550 4981 60  0000 C CNN
+F 2 "" H 3550 4650 60  0000 C CNN
+F 3 "" H 3550 4650 60  0000 C CNN
+	1    3550 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:SFH617A-1 U?
+U 1 1 5D740E73
+P 4800 6300
+F 0 "U?" H 4800 6625 50  0000 C CNN
+F 1 "E048-03" H 4800 6534 50  0000 C CNN
+F 2 "" H 4600 6100 50  0001 L CIN
+F 3 "" H 4800 6300 50  0001 L CNN
+	1    4800 6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

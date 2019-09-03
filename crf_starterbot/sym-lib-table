@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name motordriver)(type Legacy)(uri /home/hugo_dev/progs/crf_stuff/component_libs/KiCad-parts/library/L9110.lib)(options "")(descr ""))
+  (lib (name crf_starterbot-rescue)(type Legacy)(uri ${KIPRJMOD}/crf_starterbot-rescue.lib)(options "")(descr ""))
+  (lib (name hr-sc04)(type Legacy)(uri /home/hugo_dev/progs/kicad_stuff/crf_starterbot/component_libs/HC-SR04.lib)(options "")(descr ""))
 )
