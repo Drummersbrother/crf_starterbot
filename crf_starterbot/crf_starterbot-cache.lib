@@ -217,6 +217,30 @@ X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# crf_starterbot-rescue_HC-SR04-hr-sc04
+#
+DEF crf_starterbot-rescue_HC-SR04-hr-sc04 U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L BNN
+F1 "crf_starterbot-rescue_HC-SR04-hr-sc04" 0 -400 50 H V L BNN
+F2 "XCVR_HC-SR04" 0 0 50 H I L BNN
+F3 "Unavailable" 0 0 50 H I L BNN
+F4 "HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi" 0 0 50 H I L BNN
+F5 "Adafruit Industries" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "HC-SR04" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 0 -300 400 -300 N
+P 2 0 0 10 0 200 0 -300 N
+P 2 0 0 10 400 -300 400 200 N
+P 2 0 0 10 400 200 0 200 N
+X VCC 1 -200 100 200 R 40 40 0 0 W
+X TRIG 2 -200 0 200 R 40 40 0 0 B
+X ECHO 3 -200 -100 200 R 40 40 0 0 B
+X GND 4 -200 -200 200 R 40 40 0 0 W
+ENDDRAW
+ENDDEF
+#
 # crf_starterbot-rescue_L9110-motordriver
 #
 DEF crf_starterbot-rescue_L9110-motordriver U 0 40 Y Y 1 F N
@@ -242,30 +266,6 @@ X GND 5 700 -500 300 L 50 50 1 2 w
 X IA 6 700 -200 300 L 50 50 1 2 I
 X IB 7 700 200 300 L 50 50 1 2 I
 X GND 8 700 500 300 L 50 50 1 2 W
-ENDDRAW
-ENDDEF
-#
-# hr-sc04_HC-SR04
-#
-DEF hr-sc04_HC-SR04 U 0 40 Y Y 1 L N
-F0 "U" 0 200 50 H V L BNN
-F1 "hr-sc04_HC-SR04" 0 -400 50 H V L BNN
-F2 "XCVR_HC-SR04" 0 0 50 H I L BNN
-F3 "Unavailable" 0 0 50 H I L BNN
-F4 "HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi HC-SR04 Ultrasonic Sensor For Arduino And Raspberry Pi" 0 0 50 H I L BNN
-F5 "Adafruit Industries" 0 0 50 H I L BNN
-F6 "None" 0 0 50 H I L BNN
-F7 "None" 0 0 50 H I L BNN
-F8 "HC-SR04" 0 0 50 H I L BNN
-DRAW
-P 2 0 0 10 0 -300 400 -300 N
-P 2 0 0 10 0 200 0 -300 N
-P 2 0 0 10 400 -300 400 200 N
-P 2 0 0 10 400 200 0 200 N
-X VCC 1 -200 100 200 R 40 40 0 0 W
-X TRIG 2 -200 0 200 R 40 40 0 0 B
-X ECHO 3 -200 -100 200 R 40 40 0 0 B
-X GND 4 -200 -200 200 R 40 40 0 0 W
 ENDDRAW
 ENDDEF
 #
