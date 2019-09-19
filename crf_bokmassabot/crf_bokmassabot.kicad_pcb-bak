@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 3)
-    (tracks 44)
+    (tracks 41)
     (zones 0)
     (modules 17)
     (nets 7)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.635)
     (user_trace_width 0.381)
     (user_trace_width 0.635)
     (user_trace_width 0.889)
@@ -66,6 +66,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
+    (grid_origin 156.972 102.616)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -1447,13 +1448,8 @@
   (segment (start 194.7875 103) (end 198 103) (width 0.635) (layer F.Cu) (net 3))
   (segment (start 184 103) (end 183.796051 102.796051) (width 0.635) (layer F.Cu) (net 4))
   (segment (start 187.2125 103) (end 184 103) (width 0.635) (layer F.Cu) (net 4))
-  (segment (start 160 102.4) (end 160 98) (width 1.27) (layer F.Cu) (net 5))
   (segment (start 160 117.6) (end 160 122) (width 1.27) (layer F.Cu) (net 5))
-  (segment (start 149 107.8625) (end 151.4715 107.8625) (width 0.635) (layer B.Cu) (net 5))
-  (via (at 156.972 102.362) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
-  (segment (start 151.4715 107.8625) (end 156.972 102.362) (width 0.635) (layer B.Cu) (net 5))
   (segment (start 159.962 102.362) (end 160 102.4) (width 0.635) (layer F.Cu) (net 5))
-  (segment (start 156.972 102.362) (end 159.962 102.362) (width 0.635) (layer F.Cu) (net 5))
   (segment (start 189.515 98) (end 191 98) (width 0.635) (layer F.Cu) (net 5))
   (segment (start 188.7875 98.7275) (end 189.515 98) (width 0.635) (layer F.Cu) (net 5))
   (segment (start 188.7875 103) (end 188.7875 98.7275) (width 0.635) (layer F.Cu) (net 5))
@@ -1464,6 +1460,8 @@
   (segment (start 188.7875 103) (end 193.2125 103) (width 0.635) (layer F.Cu) (net 5))
   (segment (start 188.7875 103.575) (end 188.7875 117) (width 0.635) (layer F.Cu) (net 5))
   (segment (start 188.7875 103) (end 188.7875 103.575) (width 0.635) (layer F.Cu) (net 5))
+  (segment (start 158.8625 98) (end 160 98) (width 0.635) (layer B.Cu) (net 5))
+  (segment (start 149 107.8625) (end 158.8625 98) (width 0.635) (layer B.Cu) (net 5))
   (segment (start 160 110) (end 171 110) (width 1.27) (layer F.Cu) (net 6))
   (via (at 154.305 110.109) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6))
   (segment (start 149 112.1375) (end 152.2765 112.1375) (width 0.635) (layer B.Cu) (net 6))
